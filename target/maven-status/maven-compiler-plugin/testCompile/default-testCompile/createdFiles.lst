@@ -1,0 +1,5 @@
+pages\SearchResultPage.class
+RunCukesTest.class
+steps\SearchProduct.class
+Base.class
+pages\MainPage.class

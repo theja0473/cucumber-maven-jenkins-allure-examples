@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1503383238892" stop="1503383256873" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Search product</name>
+    <description type="text"></description>
+    <test-cases>
+        <test-case start="1503383238915" stop="1503383256835" status="passed">
+            <name>Not authorized user searching a product</name>
+            <title>Not authorized user searching a product</title>
+            <description type="text"></description>
+            <steps>
+                <step start="1503383240884" stop="1503383252405" status="passed">
+                    <name>Given I open main page</name>
+                    <title>Given I open main page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1503383252406" stop="1503383252587" status="passed">
+                    <name>And I enter a product name Iphone in search field</name>
+                    <title>And I enter a product name Iphone in search field</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1503383252587" stop="1503383256792" status="passed">
+                    <name>And I click on submit button</name>
+                    <title>And I click on submit button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1503383256792" stop="1503383256833" status="passed">
+                    <name>Then the first one should contain text in title Iphone</name>
+                    <title>Then the first one should contain text in title Iphone</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="story" value="Not authorized user searching a product"/>
+                <label name="feature" value="Search product"/>
+                <label name="host" value="DESKTOP-SMLKD9H"/>
+                <label name="thread" value="380@DESKTOP-SMLKD9H.main(1)"/>
+                <label name="framework" value="CucumberJVM"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="feature" value="Search product"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
