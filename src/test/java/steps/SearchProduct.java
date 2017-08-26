@@ -14,32 +14,30 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class SearchProduct {
 
-    MainPage mainPage = new MainPage();
-    SearchResultPage searchResultPage = new SearchResultPage();
-
     @Given("^I open main page$")
     public void iOpenMainPage() throws Throwable {
-        mainPage.open();
+        MainPage.open();
     }
 
     @And("^I close pop-up window$")
     public void iClosePopUpWindow() throws Throwable {
-        mainPage.closePopUpWindow();
+        MainPage.closePopUpWindow();
     }
 
 
     @And("^I enter a product name (.*) in search field$")
     public void iEnterAProductNameSelenideInSearchField(String string) throws Throwable {
-        mainPage.enterInSearchField(string);
+        MainPage.enterInSearchField(string);
     }
 
     @And("^I click on submit button$")
     public void iClickOnSubmitButton() throws Throwable {
-        mainPage.clickSearchSubmitBtn();
+        MainPage.clickSearchSubmitBtn();
     }
 
     @Then("^the first one should contain text in title (.*)$")
     public void theFirstOneShouldContainProductName(String expectedText) throws Throwable {
         $(".history-item.product").shouldHave(text(expectedText));
     }
+
 }

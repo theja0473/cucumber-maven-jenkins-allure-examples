@@ -6,6 +6,6 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class SearchResultPage {
 
-    SelenideElement firstSearchResult = $(".history-item.product");
+    static SelenideElement firstSearchResult = $(".history-item.product");
 
 }

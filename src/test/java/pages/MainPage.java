@@ -8,24 +8,23 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class MainPage {
 
-    public MainPage open() {
+    static SelenideElement searchField = $(By.id("search-key"));
+    static SelenideElement searchFieldSubmitBtn = $(By.className("search-button"));
+    static SelenideElement popUpCloseBtn = $(By.className("close-layer"));
+
+    public static void open() {
         Selenide.open("https://ru.aliexpress.com");
-        return this;
     }
 
-    SelenideElement searchField = $(By.id("search-key"));
-    SelenideElement searchFieldSubmitBtn = $(By.className("search-button"));
-    SelenideElement popUpCloseBtn = $(By.className("close-layer"));
-
-    public void closePopUpWindow() {
+    public static void closePopUpWindow() {
         popUpCloseBtn.click();
     }
 
-    public void enterInSearchField(String string) {
+    public static void enterInSearchField(String string) {
         searchField.val(string);
     }
 
-    public void clickSearchSubmitBtn() {
+    public static void clickSearchSubmitBtn() {
         searchFieldSubmitBtn.submit();
     }
 
